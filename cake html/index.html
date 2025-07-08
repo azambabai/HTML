@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>cooking website</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <!-- I am a comment  ctrl+/ --> 
+    <h1> Welcome to the Cooking Class</h1>
+    <h2>Learn How to bake a cake</h2>
+    <h3>Easy recipe for beginner</h3>
+    <h4>Step-by-step instructions</h4>
+    <h5>Minimal ingredients</h5>
+    <h6>Guaranteed Success!</h6>
+     
+    <p>This website is a simple HTML page using almost all basic tags.</p>
+    <img src="https://www.digikala.com/mag/wp-content/uploads/2021/08/Cake-Baking-tips-1.jpg" alt="Cake Image">
+    <!-- <img src="Cake-Baking-tips-1.jpg" alt="Cake Image"> -->
+
+    <h2>Ingredients</h2>
+    <ul>
+        <li>2 eggs</li>
+        <li>1 cup of sugar</li>
+        <li>1.5 cups of flour</li>
+        <li>1/2 cup of oil</li>
+        <li>1 tsp baking powder</li>
+    </ul>
+    <img src="https://www.digikala.com/mag/wp-content/uploads/2021/08/Cake-Baking-tips-3.jpg" alt="cake Image">
+    <h2>Steps</h2>
+    <ol>
+        <li>Mix eggs and sugar.</li>
+        <li>Add oil and flour.</li>
+        <li>Stir in baking powder.</li>
+        <li>Bake for 30 minutes at 180°C.</li>
+    </ol>
+    <label for="progress-bar">Your cake is almost ready.</label>
+    <progress id="progress-bar" value="70" max="100">70 %</progress>
+<br><br>
+
+    <img src="https://www.digikala.com/mag/wp-content/uploads/2021/08/Cake-Baking-tips-5.jpg" alt="cake Image">
+    
+    <!-- Internal link ,ID-->
+    <p><a href="#form">Go to the Order Form</a></p>
+
+    <hr/>
+    <h2 id="form">Order Your Cake or Contact Us</h2>
+    <form action="https://example.com/submit" method="post" name="username">
+
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id ="fullname " name ="fullname" placeholder="Your Name"><br><br>
+
+        <label for="email">Email:</label><br/>
+        <input type="email" id="email" name="email" placeholder="you@example.com"><br><br>
+
+        <label for="password" >Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Your Password"><br><br>
+
+        <label for ="Phone">Phone Number:</label><br/>
+        <input type="tel" id="phone" name="Phone" placeholder="0545639025"><br><br>
+
+        <label for="quantity">Number Of Cakes:</label><br/>
+        <input type="number" id="quantity" name="quantity" min="1"><br><br>
+
+        <label for="date">Delivery Date:</label><br/>
+        <input type="date" id="date" name="date"><br><br>
+
+        <label>Cake Type:</label><br/>
+        <label for="choco">Chocolate</label>
+        <input type="radio" id="choco" name="cake" value="chocolate">
+        <label for="vanilla">Vanilla</label>
+        <input type="radio" id="vanilla" name="cake" value="Vanilla"><br><br>
+       
+       <label>Extras:</label><br/>
+       <label for="cream">Extra Cream</label>
+       <input type="checkbox" id="cream" name="extra" value="cream">
+       <label for="fruit">Fruit Toppings</label>
+       <input type="checkbox" id="fruit" name="extra" value="fruit"><br><br>
+      
+       <label for="city">Choose your City:</label>
+       <select id="city" name="city">
+        <option value="ny">New York</option>
+        <option value="ls">Los Angeles</option>
+        <option value="ba">Barcelona</option> 
+        <option value="ch">Chicago</option>
+       </select><br><br/>
+
+       <label for="massage">Your Massage:</label><br/>
+       <textarea id="massage" name="massage" rows="5" cols="30" placeholder="Leave a comment or request..."></textarea><br><br>
+
+       <input type="submit" value="Submit Order">
+       <button type="submit">Send</button>
+       <button type="button" disabled>Disabled Button</button>
+       </form>
+<hr/>
+
+<!-- External Link  , target , download , -->
+<ul>
+<li>For more baking tips, visit <a href="https://en.wikipedia.org/wiki/Baking" target="_blank" rel="noopener noreferrer">Wikipedia: Baking.</a><sub>[1]</sub></li>
+<li>Download our free recipe sheet:<a href="https://example.com/recipe.pdf" download="Cake_Recipe.pdf">Download Recipe PDF</a><sub>[2]</sub></li>
+    <li><a href="#">Back to top</a><sup>[3]</sup></li>
+    <li><a href="/">Refresh page</a><sup>[4]</sup></li>
+</ul>
+</body>
+</html>
