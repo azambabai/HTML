@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>El Clasico: FC Barcelona vs Real Madrid</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 8px;
+      text-align: center;
+    }
+
+    /* *****Styling inside the tr tag is done without css.It can be done in two ways.****** */
+
+     /* th,td { 
+      background-color: #A50044; /* Barca garnet 
+      color: white;
+      }
+      tbody tr:nth-child(1) {
+      background-color: #004D98; /* Barca blue 
+      color: white;
+    } 
+    tbody tr:nth-child(2) {
+      background-color: #FEBE10;
+      color: black;
+    }
+    tbody tr:nth-child(3) {
+      background-color: #961C1F; 
+      color: white;
+    } 
+    tfoot {
+       background-color: #333;
+       color: white; 
+       font-weight: bold; 
+    } */
+  </style> 
+</head>
+<body>
+  <!-- semantic html <header>,<nav>,<main>,<section>,<article>,<figure>,<figcaption>,<time>,<mark>,<aside>,<footer>,etc. -->
+   
+    <header>
+    <h1>El Clásico Analysis Site</h1>
+    <nav>
+      <p><a href="#match">Last Match</a> | <a href="#schedule">Match Schedule</a> | <a href="#faq">FAQs</a></p>
+    </nav>
+  </header>
+
+  <main>
+    <section id="match">
+      <article>
+        <h2>Match Summary: Barcelona vs Real Madrid</h2>
+        <p>Match Time: <time datetime="2025-05-18T20:00">May 18, 2025 at 20:00</time></p>
+        <figure>
+          <img src="images.jpg" alt="Barcelona vs Real Madrid match">
+          <figcaption>Key moment from the second half</figcaption>
+        </figure>
+        <section>
+          <h3>Goals</h3>
+          <p>
+            <mark>Lewandowski</mark> (34'), <mark>Vinicius</mark> (67'), and the winning goal by <mark>Gundogan</mark> (85').
+          </p>
+        </section>
+
+        <!-- inline,block  ***  <div>,<span>-->
+        <section>
+          <h3>Fan Reactions</h3>
+          <p>
+            During the celebration, <span style="background-color: yellow;">a fan waved his Barca flag</span> and <span style="background-color: yellow;">jumped in excitement.</span>
+          <button style="color:red;font-family:'Comic Sans MS'">El Clásico Magic Starts Here!</button>
+          </p>
+          <div style="background-color: #10eefe; padding: 10px; margin-top: 10px;">
+            The stadium echoed with cheers as the final whistle blew. Fans hugged each other with joy.
+          </div>
+          <div style="background-color: #10eefe; padding: 10px; margin-top: 10px;">
+            Madrid fans stayed silent while Barca fans chanted in unison. The blue and garnet ruled the night.
+          </div>
+          <ul>
+            <li>FC Barcelona</li>
+            <li>Real Madrid</li>
+            <li>Atletico Madrid</li>
+        </ul>
+        </section>
+      </article>
+    </section>
+<br/>
+
+    <!-- <table>,<thead>,<tr>,<th>,<td>,<tbody>,<tfoot> *** <rowspan>,<colspan> -->
+    <section id="schedule">
+      <h2>Match Stats & Schedule</h2>
+       <table>
+        <thead>
+          <tr style="background-color: #A50044; color: white">
+            <th>f⚽⚽t ball</th> 
+            <th>Team</th>
+            <th>Wins</th>
+            <th>Losses</th>
+            <th>Goals Scored</th>
+            <th>Goals Conceded</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="5" style="background-color:#83fe10;">Match Stats & Schedule</td>
+          </tr>
+          <tr style="background-color: #004D98; color:white">
+            <td>FC Barcelona</td>
+            <td>18</td>
+            <td>3</td>
+            <td>45</td>
+            <td>22</td>
+          </tr>
+          <tr style="background-color: #FEBE10; color:black">
+            <td>Real Madrid</td>
+            <td>19</td>
+            <td>2</td>
+            <td>50</td>
+            <td>18</td>
+          </tr>
+          <tr style="background-color: #961C1F; color:white">
+            <td>Atletico Madrid</td>
+            <td>15</td>
+            <td>5</td>
+            <td>38</td>
+            <td>25</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr style="background-color: #333; color:white">
+            <td colspan="6">Last updated: May 18, 2025</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section> 
+
+    <!-- <details>,<summary> -->
+    <section id="faq">
+      <h2>Frequently Asked Questions</h2>
+      <details>
+        <summary>When is the next El Clásico?</summary>
+        <p>June 15, 2025.</p>
+      </details>
+      <details>
+        <summary>Which team has been better in the last 5 matches?</summary>
+        <p>Real Madrid with 4 wins and 1 draw.</p>
+      </details>
+    </section>
+
+    <aside>
+      <h4>Analyst's Tip</h4>
+      <p><mark>Real Madrid</mark> has shown dangerous attacking potential this season with their young stars.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p><strong>© All rights reserved - Semantic Football Analysis</strong></p>
+  </footer>
+
+</body>
+</html>
